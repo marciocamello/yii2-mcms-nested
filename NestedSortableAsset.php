@@ -24,7 +24,6 @@ class NestedSortableAsset extends AssetBundle
 	public $js = [
 		'nested/functions.js',
 		'nested/jquery.nestable.js',
-		'nested/custom.nestable.js',
 	];
 
 	public $depends = [
