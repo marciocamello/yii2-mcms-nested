@@ -178,7 +178,7 @@ class NestedSortable extends \yii\base\Widget
 			$nested .= "<ol class='dd-list'>";
 			foreach($model->all() as $row){
 				$nested .= "<li class='dd-item' data-id='{$row->id}'>";
-				$nested .= "<div class='dd-handle'>{$row->id}: {$row->name}</div>";
+				$nested .= "<div class='dd-handle'>{$row->id}: {$row->title}</div>";
 				$this->showNested($row->id);
 				$nested .= "</li>";
 			}
@@ -213,7 +213,7 @@ class NestedSortable extends \yii\base\Widget
 
 		foreach($model->all() as $row){
 			$nested .= "<li class='dd-item' data-id='{$row->id}'>";
-			$nested .= "<div class='dd-handle'>{$row->id}: {$row->name}</div>";
+			$nested .= "<div class='dd-handle'>{$row->id}: {$row->title}</div>";
 			$nested .=$this->showNested($row->id);
 			$nested .= "</li>";
 		}
