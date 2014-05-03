@@ -25,7 +25,15 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
-
 ```php
-<?= \mcms\nested\AutoloadExample::widget(); ?>```
+
+echo \mcms\nested\NestedSortable::widget([
+	'model' => Menu::className(),
+	'url' => 'nested/save-sortable',
+	'expand' => true,
+	'pluginOptions' => [
+		'maxDepth' => 2
+	]
+]);
+
+```
