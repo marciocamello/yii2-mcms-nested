@@ -22,7 +22,7 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
+List Sortable
 -----
 
 ```php
@@ -36,4 +36,22 @@ echo \mcms\nested\NestedSortable::widget([
 	]
 ]);
 
+```
+
+Action
+---------
+
+```php
+
+public function actions()
+	{
+		return [
+			'save-sortable' => [
+				'class' => 'mcms\nested\NestedSortableAction',
+				//'scenario'=>'editable',  //optional
+				'modelclass' => Categories::className(),
+			],
+		];
+	}
+	
 ```
