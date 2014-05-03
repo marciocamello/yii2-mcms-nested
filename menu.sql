@@ -1,18 +1,3 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : localhost
-Source Server Version : 50534
-Source Host           : localhost:3309
-Source Database       : yii2beta
-
-Target Server Type    : MYSQL
-Target Server Version : 50534
-File Encoding         : 65001
-
-Date: 2014-05-02 21:10:34
-*/
-
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -23,7 +8,7 @@ CREATE TABLE `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `order` int(11) NOT NULL,
   `parent` int(11) NOT NULL,
-  `name` varchar(256) NOT NULL,
+  `title` varchar(256) NOT NULL,
   `description` varchar(256) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
